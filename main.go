@@ -6,7 +6,11 @@ import (
 	// "time"
 	"sort"
 )
-
+type person struct {
+	FirstName string
+	LastName string
+	Age int
+}
 
 func main() {
 	// var numberFirst int = 10
@@ -76,6 +80,15 @@ func main() {
     fmt.Println(sli)
 	bubbleSoft(sli)
 	fmt.Println(sli)
+
+	// struct
+	var p person
+	p.FirstName = "Phuc"
+	p.LastName = "BienVan"
+	p.Age = 9
+	fmt.Println(p)
+	newPerson := person{"Ha", "Hung",9}
+	fmt.Println(newPerson)
 }
 
 func bubbleSoft(slide sort.IntSlice){
