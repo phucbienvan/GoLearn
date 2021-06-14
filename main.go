@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 	"math"
-	// "time"
-
 	"time"
+
+	// "time"
 	"sort"
 )
 type person struct {
@@ -62,26 +62,26 @@ func main() {
 	// fmt.Println(numSlice)
 	// fmt.Println(numSlice[0])
 
-	// var ele rune
-    // var size int
-    // var sli = make([]int,0,1)
-    // size = cap(sli)
-    // for i:=0; i<=size; i++{
-    //     if i>=len(sli){
-    //         size=size+1
-    //     }
-    //     ele = 0
-    //     fmt.Println("Enter a number to add: ")
-    //     fmt.Scan(&ele)
-    //     if ele==0 {
-    //         fmt.Println("Stopping!")
-    //         break
-    //     }
-    //     sli = append(sli, int(ele))
-    // }
-    // fmt.Println(sli)
-	// bubbleSoft(sli)
-	// fmt.Println(sli)
+	var ele rune
+    var size int
+    var sli = make([]int,0,1)
+    size = cap(sli)
+    for i:=0; i<=size; i++{
+        if i>=len(sli){
+            size=size+1
+        }
+        ele = 0
+        fmt.Println("Enter a number to add: ")
+        fmt.Scan(&ele)
+        if ele==0 {
+            fmt.Println("Stopping!")
+            break
+        }
+        sli = append(sli, int(ele))
+    }
+    fmt.Println(sli)
+	bubbleSoft(sli)
+	fmt.Println(sli)
 
 	// struct
 	var p person
@@ -96,6 +96,7 @@ func main() {
 	go go1()
 	go go2()
 	time.Sleep(time.Second)
+	
 }
 
 func go1(){
